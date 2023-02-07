@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- meta tags -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Create Request</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+
+  <!-- START THEME STYLES -->
+  <link rel="stylesheet" type="text/css" href="assets/css/theme.min.css" />
+  <!-- END THEME STYLES -->
+</head>
+
+<body>
+  <!-- START HEADER SECTION -->
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-6">
+          <div class="site-logo">
+            <img src="assets/images/cemex-logo.png" class="img-fluid" alt="logo" />
+            <p class="site-logo-title">Document Management System</p>
+          </div>
+        </div>
+
+        <div class="col-lg-9 col-6">
+          <div class="header-wrapper">
+            <div class="header-search">
+              <form class="form-inline">
+                <div class="form-group">
+                  <input type="text" class="form-control search-req" id="search-request" name="search-request"
+                    placeholder="Search by request number…" />
+                  <i class="fab fa-sistrix search-icon"></i>
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+              </form>
+            </div>
+
+            <div class="header-actions">
+              <div class="notification">
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" id="notification" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/images/svg/notification.svg" class="img-fluid" alt="notification" />
+                  </button>
+
+                  <div class="dropdown-menu" aria-labelledby="notification">
+                    <div class="dropdown-head">Notifications</div>
+
+                    <a class="dropdown-item" href="#">
+                      <div class="icon-outer _outer-green">
+                        <img src="assets/images/svg/correct.svg" alt="correct-icon" />
+                      </div>
+                      <span class="notifiy-item">Request Number 5 has been opened</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <div class="icon-outer _outer-blue">
+                        <img src="assets/images/svg/file.svg" alt="file-icon" />
+                      </div>
+                      <span class="notifiy-item">Request Number 5 has been reviewed</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <div class="icon-outer _outer-red">
+                        <img src="assets/images/svg/close.svg" alt="close-icon" />
+                      </div>
+                      <span class="notifiy-item">Request Number 6 closed</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <div class="icon-outer _outer-brown">
+                        <img src="assets/images/svg/assuit-legal.svg" style="width: 18px;" alt="legal-icon" />
+                      </div>
+                      <span class="notifiy-item">Request Number 5 has been closed</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <div class="icon-outer _outer-orange">
+                        <img src="assets/images/svg/cairo-legal.svg" style="width: 18px;" alt="cairo-icon" />
+                      </div>
+                      <span class="notifiy-item">Request Number 5 has been closed</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="setting">
+                <img src="assets/images/svg/setting.svg" class="img-fluid" alt="setting" />
+              </div>
+
+              <div class="user-log">
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" id="user-log" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/images/user-legal.png" class="img-fluid" alt="user-image" />
+                    <span class="username">Legal Cairo</span>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="user-log">
+                    <a class="dropdown-item" href="login.html">
+                      <i class="fas fa-sign-out-alt"></i>
+                      <span>Log Out</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- END HEADER SECTION -->
+
+  <!-- START MAIN SECTION -->
+  <main class="dashboard-layout">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- sidebar -->
+        <div class="col-md-3 col-sm-1 col-2">
+          <div class="sidebar">
+            <ul class="side-list">
+              <li class="side-item btn-req">
+                <a class="side-link btn btn-primary disabled" href="create-request.html">
+                  <span>Create new request</span>
+                  <i class="fas fa-plus"></i>
+                </a>
+              </li>
+              <li class="side-item">
+                <a class="side-link" href="dashboard.html">
+                  <img src="assets/images/svg/overview-dark.svg" alt="side-icon" class="img-fluid" />
+                  <span class="side-title">Overview</span>
+                </a>
+              </li>
+              <li class="side-item">
+                <a class="side-link" href="find-request.html">
+                  <img src="assets/images/svg/search-dark.svg" alt="side-icon" class="img-fluid" />
+                  <span class="side-title">Find request</span>
+                </a>
+              </li>
+              <li class="side-item">
+                <a class="side-link" href="request-summary.html">
+                  <img src="assets/images/svg/summary-dark.svg" alt="side-icon" class="img-fluid" />
+                  <span class="side-title">Requests summary</span>
+                </a>
+              </li>
+              <li class="side-item">
+                <a class="side-link" href="drafts.html">
+                  <img src="assets/images/svg/drafts-dark.svg" alt="side-icon" class="img-fluid" />
+                  <span class="side-title">Drafts</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- main container -->
+        <div class="col-md-9 col-sm-11 col-10">
+          <div class="container-wrapper">
+            <div class="main-card">
+              <div class="card-head">
+                <span>Create new request</span>
+                <p class="card-subtitle mt-1">You should fill all mandatory fields. In case the mandatory fields are not
+                  fulfilled, you will need to attach all documents again. The maximum size of any attachment is 10 MB.
+                </p>
+              </div>
+
+              <div class="card-body">
+                <form class="create-new-request needs-validation" novalidate action="dashboard-result.html">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="form-group">
+                            <label for="req-title">
+                              <span>Title</span>
+                              <span class="required-hint">*</span>
+                            </label>
+                            <input type="text" class="form-control" id="req-title" name="req-title" required />
+                            <div class="invalid-feedback">
+                              * Title is required
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group">
+                            <label for="request-status">Request Status</label>
+                            <select class="form-control" id="request-status" name="request-status">
+                              <option value="" selected disabled>Choose</option>
+                              <option value="option 1">option 1</option>
+                              <option value="option 2">option 2</option>
+                              <option value="option 3">option 3</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="req-description">
+                          <span>Description</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <textarea class="form-control" rows="5" id="req-description" name="req-description" required
+                          placeholder="Enter..."></textarea>
+                        <div class="invalid-feedback">
+                          * Description is required
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="request-type">
+                          <span>Request Type</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <select class="form-control" id="request-type" required name="request-type">
+                          <option value="" selected disabled>Choose</option>
+                          <option value="option 1">option 1</option>
+                          <option value="option 2">option 2</option>
+                          <option value="option 3">option 3</option>
+                          <option value="draft">Draft</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          * Request Type is required
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 review-attach d-none">
+                      <div class="form-group">
+                        <label>
+                          <span>Review Attachment</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input border-double" id="review-attach"
+                            name="review-attach" />
+                          <label class="custom-file-label" for="review-attach">drag file here</label>
+
+                          <div class="invalid-feedback">
+                            * Review Attachment is required
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="req-name">
+                          <span>Requester Name</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <input type="text" class="form-control" id="req-name" name="req-name" required />
+                        <div class="invalid-feedback">
+                          * Request Name is required
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="req-email">
+                          <span>Requester Email</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <input type="email" class="form-control" id="req-email" name="req-email" required />
+                        <div class="invalid-feedback">
+                          * Request Email is required
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="contract-company">
+                          <span>Contracting CEMEX Company</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <select class="form-control" id="contract-company" required name="contract-company">
+                          <option value="" selected disabled>Choose</option>
+                          <option value="option 1">option 1</option>
+                          <option value="option 2">option 2</option>
+                          <option value="option 3">option 3</option>
+                          <option value="other">Other</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          * Contracting Company is required
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 other-contract-company d-none">
+                      <div class="form-group">
+                        <label for="other-contract-company">
+                          <span>Other Contracting Company</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <input type="text" class="form-control double-border" id="other-contract-company"
+                          name="other-contract-company" />
+                        <div class="invalid-feedback">
+                          * Other Contracting Company is required
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="req-department">
+                          <span>Department</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <select class="form-control" id="req-department" required name="req-department">
+                          <option value="" selected disabled>Choose</option>
+                          <option value="option 1">option 1</option>
+                          <option value="option 2">option 2</option>
+                          <option value="option 3">option 3</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          * Request Department is required
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="contract-type">
+                          <span>Contract Type</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <select class="form-control" id="contract-type" required name="contract-type">
+                          <option value="" selected disabled>Choose</option>
+                          <option value="option 1">option 1</option>
+                          <option value="option 2">option 2</option>
+                          <option value="option 3">option 3</option>
+                          <option value="other">Other</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          * Contract Type is required
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 other-contract-type d-none">
+                      <div class="form-group">
+                        <label for="other-contract-type">
+                          <span>Other Contract Type</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <input type="text" class="form-control double-border" id="other-contract-type"
+                          name="other-contract-type" />
+                        <div class="invalid-feedback">
+                          * Other Contract Type is required
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="req-price">
+                          <span>Price</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <input type="text" class="form-control" id="req-price" name="req-price" required
+                          placeholder="price" />
+                        <div class="invalid-feedback">
+                          * Price is required
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="req-currency">
+                          <span>Currency</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <select class="form-control" id="req-currency" required name="req-currency">
+                          <option value="" selected disabled>Choose</option>
+                          <option value="option 1">option 1</option>
+                          <option value="option 2">option 2</option>
+                          <option value="option 3">option 3</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          * Currency is required
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="effictive-date">Effective Date</label>
+                        <input class="form-control datepicker" id="effictive-datepicker" name="effictive-date"
+                          placeholder="Choose" />
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="payment-terms">
+                          <span>Payment Terms</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <textarea class="form-control" rows="2" id="payment-terms" name="payment-terms" required
+                          placeholder="Enter..."></textarea>
+                        <div class="invalid-feedback">
+                          * Payment Terms is required
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="duration-type">
+                          <span>Duration Type</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <select class="form-control" id="duration-type" required name="duration-type">
+                          <option value="" selected disabled>Choose</option>
+                          <option value="option 1">option 1</option>
+                          <option value="option 2">option 2</option>
+                          <option value="option 3">option 3</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          * Duration Type is required
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="duration">
+                          <span>Duration</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <input type="text" class="form-control" id="duration"
+                          name="duration" required />
+                        <div class="invalid-feedback">
+                          * Duration is required
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                              <label for="guarantee">
+                                <span>Guarantee</span>
+                                <span class="required-hint">*</span>
+                              </label>
+                              <select class="form-control" id="guarantee" required name="guarantee">
+                                <option value="" selected disabled>Choose</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                * Guarantee is required
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-7">
+                          <div class="form-group">
+                            <label for="guarantee-input">
+                            </label>
+                            <input type="text" class="form-control" id="guarantee-input"
+                              name="guarantee-input" readonly placeholder="Enter Data here..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                              <label for="insurance">
+                                <span>Insurance</span>
+                                <span class="required-hint">*</span>
+                              </label>
+                              <select class="form-control" id="insurance" required name="insurance">
+                                <option value="" selected disabled>Choose</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                * insurance is required
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-7">
+                          <div class="form-group">
+                            <label for="insurance-input">
+                            </label>
+                            <input type="text" class="form-control" id="insurance-input"
+                              name="insurance-input" readonly placeholder="Enter Data here..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-md-5">
+                            <div class="form-group">
+                              <label for="liquidated-damages">
+                                <span>Liquidated Damages</span>
+                                <span class="required-hint">*</span>
+                              </label>
+                              <select class="form-control" id="liquidated-damages" required name="liquidated-damages">
+                                <option value="" selected disabled>Choose</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                              </select>
+                              <div class="invalid-feedback">
+                                * liquidated damages is required
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-7">
+                          <div class="form-group">
+                            <label for="liquidated-damages-input">
+                            </label>
+                            <input type="text" class="form-control" id="liquidated-damages-input"
+                              name="liquidated-damages-input" readonly placeholder="Enter Data here..." />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="casual-labor">
+                          <span>Casual Labor</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <select class="form-control" id="casual-labor" required name="casual-labor">
+                          <option value="" selected disabled>Choose</option>
+                          <option value="option 1">option 1</option>
+                          <option value="option 2">option 2</option>
+                          <option value="option 3">option 3</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          * Casual Labor is required
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="second-party">
+                          <span>Second Party</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <input type="text" class="form-control" id="second-party" name="second-party" required
+                          placeholder="second party" />
+                        <div class="invalid-feedback">
+                          * Second Party is required
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>
+                          <span>Second Party Tax Card</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" required id="second-party-tax"
+                            name="second-party-tax" />
+                          <label class="custom-file-label" for="second-party-tax">drag file here</label>
+
+                          <div class="invalid-feedback">
+                            * Second Party Tax Card is required
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>
+                          <span>Second Party CR</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" required id="second-party-cr"
+                            name="second-party-cr" />
+                          <label class="custom-file-label" for="second-party-cr">drag file here</label>
+
+                          <div class="invalid-feedback">
+                            * Second Party CR is required
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>
+                          <span>License</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" required id="license"
+                            name="license" />
+                          <label class="custom-file-label" for="license">drag file here</label>
+
+                          <div class="invalid-feedback">
+                            * License is required
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="scope-work">
+                          <span>Scope of Work</span>
+                          <span class="required-hint">*</span>
+                        </label>
+                        <textarea class="form-control" rows="5" id="scope-work" name="scope-work" required
+                          placeholder="Enter your scope..."></textarea>
+                        <div class="invalid-feedback">
+                          * Scope of Work is required
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>
+                          <span>Scope of Work Attachment</span>
+                        </label>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="scope-work-attach"
+                            name="scope-work-attach" />
+                          <label class="custom-file-label" for="scope-work-attach">drag file here</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>
+                          <span>Other Attachments</span>
+                        </label>
+                        <div class="custom-file">
+                          <input type="file" class="custom-file-input" id="other-attachments"
+                            name="other-attachments" />
+                          <label class="custom-file-label" for="other-attachments">drag file here</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- buttons -->
+                  <div class="row mt-md-5 mt-3">
+                    <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-12 d-flex justify-content-between">
+                          <button class="btn btn-primary" type="submit">Submit</button>
+                          <button class="btn btn-darker-grey save-draft" type="submit">Save as draft</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- END MAIN SECTION -->
+
+  <!-- START FOOTER SECTION -->
+  <footer>
+  </footer>
+  <!-- END FOOTER SECTION -->
+
+  <!-- START THEME JS -->
+  <script type="text/javascript" src="assets/js/library.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+
+  <script>
+    // datepicker JS
+    $("#effictive-datepicker").datepicker({
+      uiLibrary: 'bootstrap4',
+      iconsLibrary: 'fontawesome',
+      format: 'dd mmmm yyyy'
+    });
+
+    // show and hide other inputs
+    $("#request-type").on('change', function () {
+      if ($("#request-type").val() == "draft") {
+        $(".review-attach").addClass("d-block");
+        $(".review-attach").find("input").attr("required",true);
+      } else {
+        $(".review-attach").removeClass("d-block");
+        $(".review-attach").find("input").attr("required",false);
+      }
+    });
+    $("#contract-company").on('change', function () {
+      if ($("#contract-company").val() == "other") {
+        $(".other-contract-company").addClass("d-block");
+        $(".other-contract-company").find("input").attr("required",true);
+      } else {
+        $(".other-contract-company").removeClass("d-block");
+        $(".other-contract-company").find("input").attr("required",false);
+      }
+    });
+    $("#contract-type").on('change', function () {
+      if ($("#contract-type").val() == "other") {
+        $(".other-contract-type").addClass("d-block");
+        $(".other-contract-type").find("input").attr("required",true);
+      } else {
+        $(".other-contract-type").removeClass("d-block");
+        $(".other-contract-type").find("input").attr("required",false);
+      }
+    });
+    $("#guarantee").on('change', function () {
+      if ($("#guarantee").val() == "yes") {
+        $("#guarantee-input").attr("readonly", false);
+        $("#guarantee-input").attr("required",true);
+      } else {
+        $("#guarantee-input").attr("readonly", true);
+        $("#guarantee-input").attr("required",false);
+      }
+    });
+    $("#insurance").on('change', function () {
+      if ($("#insurance").val() == "yes") {
+        $("#insurance-input").attr("readonly", false);
+        $("#insurance-input").attr("required",true);
+      } else {
+        $("#insurance-input").attr("readonly", true);
+        $("#insurance-input").attr("required",false);
+      }
+    });
+    $("#liquidated-damages").on('change', function () {
+      if ($("#liquidated-damages").val() == "yes") {
+        $("#liquidated-damages-input").attr("readonly", false);
+        $("#liquidated-damages-input").attr("required",true);
+      } else {
+        $("#liquidated-damages-input").attr("readonly", true);
+        $("#liquidated-damages-input").attr("required",false);
+      }
+    });
+
+    $(".save-draft").click(function(){
+      $("input , textarea , select").attr("required",false);
+    });
+  </script>
+  <!-- END THEME JS -->
+</body>
+
+</html>

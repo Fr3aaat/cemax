@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- meta tags -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Drafts</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+
+  <!-- START THEME STYLES -->
+  <link rel="stylesheet" type="text/css" href="assets/css/theme.min.css" />
+  <!-- END THEME STYLES -->
+</head>
+
+<body>
+  <!-- START HEADER SECTION -->
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 col-6">
+          <div class="site-logo">
+            <img src="assets/images/cemex-logo.png" class="img-fluid" alt="logo" />
+            <p class="site-logo-title">Document Management System</p>
+          </div>
+        </div>
+
+        <div class="col-lg-9 col-6">
+          <div class="header-wrapper">
+            <div class="header-search">
+              <form class="form-inline">
+                <div class="form-group">
+                  <input type="text" class="form-control search-req" id="search-request" name="search-request"
+                    placeholder="Search by request number…" />
+                  <i class="fab fa-sistrix search-icon"></i>
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+              </form>
+            </div>
+
+            <div class="header-actions">
+              <div class="notification">
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" id="notification" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/images/svg/notification.svg" class="img-fluid" alt="notification" />
+                  </button>
+
+                  <div class="dropdown-menu" aria-labelledby="notification">
+                    <div class="dropdown-head">Notifications</div>
+
+                    <a class="dropdown-item" href="#">
+                      <div class="icon-outer _outer-green">
+                        <img src="assets/images/svg/correct.svg" alt="correct-icon" />
+                      </div>
+                      <span class="notifiy-item">Request Number 5 has been opened</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <div class="icon-outer _outer-blue">
+                        <img src="assets/images/svg/file.svg" alt="file-icon" />
+                      </div>
+                      <span class="notifiy-item">Request Number 5 has been reviewed</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <div class="icon-outer _outer-red">
+                        <img src="assets/images/svg/close.svg" alt="close-icon" />
+                      </div>
+                      <span class="notifiy-item">Request Number 6 closed</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <div class="icon-outer _outer-brown">
+                        <img src="assets/images/svg/assuit-legal.svg" style="width: 18px;" alt="legal-icon" />
+                      </div>
+                      <span class="notifiy-item">Request Number 5 has been closed</span>
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <div class="icon-outer _outer-orange">
+                        <img src="assets/images/svg/cairo-legal.svg" style="width: 18px;" alt="cairo-icon" />
+                      </div>
+                      <span class="notifiy-item">Request Number 5 has been closed</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="setting">
+                <img src="assets/images/svg/setting.svg" class="img-fluid" alt="setting" />
+              </div>
+
+              <div class="user-log">
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" id="user-log" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/images/user-legal.png" class="img-fluid" alt="user-image" />
+                    <span class="username">Legal Cairo</span>
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="user-log">
+                    <a class="dropdown-item" href="login.html">
+                      <i class="fas fa-sign-out-alt"></i>
+                      <span>Log Out</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- END HEADER SECTION -->
+
+  <!-- START MAIN SECTION -->
+  <main class="dashboard-layout">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- sidebar -->
+        <div class="col-md-3 col-sm-1 col-2">
+          <div class="sidebar">
+            <ul class="side-list">
+              <li class="side-item btn-req">
+                <a class="side-link btn btn-primary" href="create-request.html">
+                  <span>Create new request</span>
+                  <i class="fas fa-plus"></i>
+                </a>
+              </li>
+              <li class="side-item">
+                <a class="side-link" href="dashboard.html">
+                  <img src="assets/images/svg/overview-dark.svg" alt="side-icon" class="img-fluid" />
+                  <span class="side-title">Overview</span>
+                </a>
+              </li>
+              <li class="side-item">
+                <a class="side-link" href="find-request.html">
+                  <img src="assets/images/svg/search-dark.svg" alt="side-icon" class="img-fluid" />
+                  <span class="side-title">Find request</span>
+                </a>
+              </li>
+              <li class="side-item">
+                <a class="side-link" href="request-summary.html">
+                  <img src="assets/images/svg/summary-dark.svg" alt="side-icon" class="img-fluid" />
+                  <span class="side-title">Requests summary</span>
+                </a>
+              </li>
+              <li class="side-item active">
+                <a class="side-link" href="drafts.html">
+                  <img src="assets/images/svg/drafts-dark.svg" alt="side-icon" class="img-fluid" />
+                  <span class="side-title">Drafts</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-9 col-sm-11 col-10">
+          <div class="container-wrapper">
+            <!-- table -->
+            <div class="main-card mb-5 pt-3">
+              <div class="table-responsive">
+                <table id="req-summary-table" class="data-table table">
+                  <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Type</th>
+                      <th>Department</th>
+                      <th>Contract</th>
+                      <th>Creation date</th>
+                      <th>Update date</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="text-primary">Contract with amer group</td>
+                      <td>Draft</td>
+                      <td class="text-primary">CRM</td>
+                      <td>Rent (Property)</td>
+                      <td>
+                        <span class="d-md-block">2020-02-1</span>
+                        <span class="d-md-block">11:24:42</span>
+                      </td>
+                      <td class="text-primary">
+                        <span class="d-md-block">2020-01-14</span>
+                        <span class="d-md-block">11:25:55</span>
+                      </td>
+                      <td>
+                        <a href="edit-request.html" class="text-error text-decoration-none">View</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-primary">Contract with amer group</td>
+                      <td>Draft</td>
+                      <td class="text-primary">Commercial</td>
+                      <td>Rent (Property)</td>
+                      <td>
+                        <span class="d-md-block">2020-02-1</span>
+                        <span class="d-md-block">11:24:42</span>
+                      </td>
+                      <td class="text-primary">
+                        <span class="d-md-block">2020-01-14</span>
+                        <span class="d-md-block">11:25:55</span>
+                      </td>
+                      <td>
+                        <a href="edit-request.html" class="text-error text-decoration-none">View</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-primary">Contract with amer group</td>
+                      <td>Draft</td>
+                      <td class="text-primary">HR</td>
+                      <td>Rent (Property)</td>
+                      <td>
+                        <span class="d-md-block">2020-02-1</span>
+                        <span class="d-md-block">11:24:42</span>
+                      </td>
+                      <td class="text-primary">
+                        <span class="d-md-block">2020-01-14</span>
+                        <span class="d-md-block">11:25:55</span>
+                      </td>
+                      <td>
+                        <a href="edit-request.html" class="text-error text-decoration-none">View</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-primary">Contract with amer group</td>
+                      <td>Draft</td>
+                      <td class="text-primary">CRM</td>
+                      <td>Rent (Property)</td>
+                      <td>
+                        <span class="d-md-block">2020-02-1</span>
+                        <span class="d-md-block">11:24:42</span>
+                      </td>
+                      <td class="text-primary">
+                        <span class="d-md-block">2020-01-14</span>
+                        <span class="d-md-block">11:25:55</span>
+                      </td>
+                      <td>
+                        <a href="edit-request.html" class="text-error text-decoration-none">View</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-primary">Contract with amer group</td>
+                      <td>Draft</td>
+                      <td class="text-primary">CRM</td>
+                      <td>Rent (Property)</td>
+                      <td>
+                        <span class="d-md-block">2020-02-1</span>
+                        <span class="d-md-block">11:24:42</span>
+                      </td>
+                      <td class="text-primary">
+                        <span class="d-md-block">2020-01-14</span>
+                        <span class="d-md-block">11:25:55</span>
+                      </td>
+                      <td>
+                        <a href="edit-request.html" class="text-error text-decoration-none">View</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-primary">Contract with amer group</td>
+                      <td>Draft</td>
+                      <td class="text-primary">CRM</td>
+                      <td>Rent (Property)</td>
+                      <td>
+                        <span class="d-md-block">2020-02-1</span>
+                        <span class="d-md-block">11:24:42</span>
+                      </td>
+                      <td class="text-primary">
+                        <span class="d-md-block">2020-01-14</span>
+                        <span class="d-md-block">11:25:55</span>
+                      </td>
+                      <td>
+                        <a href="edit-request.html" class="text-error text-decoration-none">View</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-primary">Contract with amer group</td>
+                      <td>Draft</td>
+                      <td class="text-primary">CRM</td>
+                      <td>Rent (Property)</td>
+                      <td>
+                        <span class="d-md-block">2020-02-1</span>
+                        <span class="d-md-block">11:24:42</span>
+                      </td>
+                      <td class="text-primary">
+                        <span class="d-md-block">2020-01-14</span>
+                        <span class="d-md-block">11:25:55</span>
+                      </td>
+                      <td>
+                        <a href="edit-request.html" class="text-error text-decoration-none">View</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-primary">Contract with amer group</td>
+                      <td>Draft</td>
+                      <td class="text-primary">CRM</td>
+                      <td>Rent (Property)</td>
+                      <td>
+                        <span class="d-md-block">2020-02-1</span>
+                        <span class="d-md-block">11:24:42</span>
+                      </td>
+                      <td class="text-primary">
+                        <span class="d-md-block">2020-01-14</span>
+                        <span class="d-md-block">11:25:55</span>
+                      </td>
+                      <td>
+                        <a href="edit-request.html" class="text-error text-decoration-none">View</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-primary">Contract with amer group</td>
+                      <td>Draft</td>
+                      <td class="text-primary">CRM</td>
+                      <td>Rent (Property)</td>
+                      <td>
+                        <span class="d-md-block">2020-02-1</span>
+                        <span class="d-md-block">11:24:42</span>
+                      </td>
+                      <td class="text-primary">
+                        <span class="d-md-block">2020-01-14</span>
+                        <span class="d-md-block">11:25:55</span>
+                      </td>
+                      <td>
+                        <a href="edit-request.html" class="text-error text-decoration-none">View</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-primary">Contract with amer group</td>
+                      <td>Draft</td>
+                      <td class="text-primary">CRM</td>
+                      <td>Rent (Property)</td>
+                      <td>
+                        <span class="d-md-block">2020-02-1</span>
+                        <span class="d-md-block">11:24:42</span>
+                      </td>
+                      <td class="text-primary">
+                        <span class="d-md-block">2020-01-14</span>
+                        <span class="d-md-block">11:25:55</span>
+                      </td>
+                      <td>
+                        <a href="edit-request.html" class="text-error text-decoration-none">View</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-primary">Contract with amer group</td>
+                      <td>Draft</td>
+                      <td class="text-primary">CRM</td>
+                      <td>Rent (Property)</td>
+                      <td>
+                        <span class="d-md-block">2020-02-1</span>
+                        <span class="d-md-block">11:24:42</span>
+                      </td>
+                      <td class="text-primary">
+                        <span class="d-md-block">2020-01-14</span>
+                        <span class="d-md-block">11:25:55</span>
+                      </td>
+                      <td>
+                        <a href="edit-request.html" class="text-error text-decoration-none">View</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-primary">Contract with amer group</td>
+                      <td>Draft</td>
+                      <td class="text-primary">CRM</td>
+                      <td>Rent (Property)</td>
+                      <td>
+                        <span class="d-md-block">2020-02-1</span>
+                        <span class="d-md-block">11:24:42</span>
+                      </td>
+                      <td class="text-primary">
+                        <span class="d-md-block">2020-01-14</span>
+                        <span class="d-md-block">11:25:55</span>
+                      </td>
+                      <td>
+                        <a href="edit-request.html" class="text-error text-decoration-none">View</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-primary">Contract with amer group</td>
+                      <td>Draft</td>
+                      <td class="text-primary">CRM</td>
+                      <td>Rent (Property)</td>
+                      <td>
+                        <span class="d-md-block">2020-02-1</span>
+                        <span class="d-md-block">11:24:42</span>
+                      </td>
+                      <td class="text-primary">
+                        <span class="d-md-block">2020-01-14</span>
+                        <span class="d-md-block">11:25:55</span>
+                      </td>
+                      <td>
+                        <a href="edit-request.html" class="text-error text-decoration-none">View</a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- END MAIN SECTION -->
+
+  <!-- START FOOTER SECTION -->
+  <footer>
+  </footer>
+  <!-- END FOOTER SECTION -->
+
+  <!-- START THEME JS -->
+  <script type="text/javascript" src="assets/js/library.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      // START DATA TABLE
+      $('.data-table').DataTable({
+        "responsive": true,
+        "lengthChange": false,
+        "pageLength": 10,
+        "paging": true,
+        "ordering": false,
+        "info": true,
+        "bFilter": false,
+        "language": {
+          "sEmptyTable": "There is no data available in the table",
+          "sLoadingRecords": "Loading...",
+          "sProcessing": "Loading...",
+          "sLengthMenu": "Show _MENU_ records",
+          "sZeroRecords": "No Records Found",
+          "sInfo": "Showing <span class='text-primary'> _START_ </span> to <span class='text-primary'> _END_ </span> of <span class='text-primary'> _TOTAL_ </span> request",
+          "sInfoEmpty": "Showing 0 to 0 of 0 request",
+          "oPaginate": {
+            "sPrevious": "Back",
+            "sNext": "Next",
+          }
+        }
+      });
+      // END DATA TABLE
+    });
+  </script>
+  <!-- END THEME JS -->
+</body>
+
+</html>

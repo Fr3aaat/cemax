@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- meta tags -->
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Login</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/icon.png">
+
+  <!-- START THEME STYLES -->
+  <link rel="stylesheet" type="text/css" href="assets/css/theme.min.css" />
+  <!-- END THEME STYLES -->
+</head>
+
+<body>
+  <!-- START MAIN SECTION -->
+  <section class="login-layout">
+    <div class="site-logo">
+      <img src="assets/images/cemex-logo.png" class="img-fluid" alt="logo" />
+      <p class="site-logo-title">Document Management System</p>
+    </div>
+
+    <div class="login-wrapper">
+      <div class="login-img">
+        <img src="assets/images/svg/login.svg" class="img-fluid" alt="login-img" />
+      </div>
+
+      <div class="login-container">
+        <div class="login-content">
+          <h2>Welcome to <span><img src="assets/images/cemex-font.png" class="img-fluid" alt="logo" /></span></h2>
+          <h6>Login</h6>
+
+          <form class="needs-validation" novalidate action="dashboard.html">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <img src="assets/images/svg/user.svg" class="img-fluid" alt="user-icon" />
+                </span>
+              </div>
+              <input type="text" name="username" required class="form-control" placeholder="Username">
+              <div class="invalid-feedback">
+                *Username is required
+              </div>
+            </div>
+
+            <div class="input-group mb-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <img src="assets/images/svg/password.svg" class="img-fluid" alt="password-icon" />
+                </span>
+              </div>
+              <input type="password" name="password" required class="form-control" placeholder="Password">
+              <div class="invalid-feedback">
+                *Password is required
+              </div>
+            </div>
+
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="remember-check">
+              <label class="custom-control-label" for="remember-check">Remember me</label>
+            </div>
+
+            <div class="form-group mt-lg-5 mt-3">
+              <button class="btn login-submit btn-block" type="submit">Login</button>
+            </div>
+
+            <!-- service error msg -->
+            <!-- to show this error msg, change class from 'd-none' to 'd-block' -->
+            <div class="alert alert-danger d-none" role="alert">
+              Username or password not correct
+            </div>
+          </form>
+
+          <div class="logo-shadow">
+            <img src="assets/images/cemex-logo-shadow.png" class="img-fluid" alt="logo-shadow" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END MAIN SECTION -->
+
+  <!-- START THEME JS -->
+  <script type="text/javascript" src="assets/js/library.min.js"></script>
+  <script type="text/javascript" src="assets/js/main.js"></script>
+  <!-- END THEME JS -->
+</body>
+
+</html>
